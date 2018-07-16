@@ -6,11 +6,11 @@ Library           ExcelLibrary
 
 *** Variables ***
 @{Username}       eboadmin
-@{URL}      http://segotn11232/procurement/WebDriver?ACT=Login&EID=1&KIU=73e122e95387a85ffcaec373e2b18683
+@{URL}            http://segotn11232/procurement/WebDriver?ACT=Login&EID=1&KIU=73e122e95387a85ffcaec373e2b18683
 
 *** Test Cases ***
 ShoppingCart
-    Open Browser    @{URL}      chrome
+    Open Browser    @{URL}    chrome
     Input Text    name:username_input    @{Username}
     Capture Page Screenshot
     Input Password    name:j_password    password

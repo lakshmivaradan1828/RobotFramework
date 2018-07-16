@@ -1,0 +1,17 @@
+*** Settings ***
+Library           SeleniumLibrary
+Library           ExcelLibrary
+Library           AutoItLibrary
+Library           SikuliLibrary
+
+*** Variables ***
+${WindowName}     ${EMPTY}
+
+*** Test Cases ***
+SrpintPOC
+    Win Activate    HPE Sprinter Agent
+    ${WindowName}    Win Get Title    Sprint - Version 5.9.0.23 - [[A0101]-Assembly Area Level Structure - \ IM]
+    Log To Console    ${WindowName}
+    WinActivate    Title1
+    ${WindowName}    Control List View    Sprint - Version 5.9.0.23 - [[A0101]-Assembly Area Level Structure - \ IM]    list    strControl=591820    strCommand=GetText
+    log    ${WindowName}
