@@ -4,7 +4,7 @@ Library           ExcelLibrary
 
 *** Test Cases ***
 TestBasic
-    Open Browser    https://www.google   Chrome
+    Open Browser    https://www.google.com   Chrome
     Maximize Browser Window
     Input Text    id:lst-ib    Robot Framework
     Press Key    name:btnK    \\13
