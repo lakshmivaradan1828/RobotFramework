@@ -8,7 +8,7 @@ TestBasic
     Maximize Browser Window
     Capture Page Screenshot
     #Input Text    id:lst-ib    Robot Framework
-    Input Text    id:lst-ib    Automation Testing
+    Input Text    id:lst-ib    Robotics
     Capture Page Screenshot
     Press Key    name:btnK    \\13
     Click Link    xpath://*[@id="rso"]/div[1]/div/div[1]/div/div/h3/a
